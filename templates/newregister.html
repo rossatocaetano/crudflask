@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+
+<form method="POST" action="{{ url_for('create_new_register') }}">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="categoria">Gender</label>
+        <input type="text" id="gender" name="gender" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="document">Document</label>
+        <input type="text" id="document" name="document" class="form-control">
+    </div>
+          
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-salvar">Save</button>
+    <a class="btn btn-danger" href="{{ url_for('index') }}">Return</a>
+       
+</form>
+
+{% endblock %}
