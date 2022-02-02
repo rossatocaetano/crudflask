@@ -3,8 +3,8 @@ print('Conecting...')
 conn = MySQLdb.connect(user='root', passwd='insert_password', host='127.0.0.1', port=3306) #criar conexão com o bd
 
 # Descomente se quiser desfazer o banco...
-conn.cursor().execute("DROP DATABASE IF EXISTS `register_people`;")
-conn.commit()
+# conn.cursor().execute("DROP DATABASE IF EXISTS `register_people`;")
+# conn.commit()
 
 # Cria a variável "criar_tabelas", que armazena os comandos SQL para criar o banco de dados do projeto
 criar_tabelas = '''SET NAMES utf8;

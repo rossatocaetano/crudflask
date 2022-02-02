@@ -4,7 +4,7 @@ from models import People, User
 SQL_DELETE_PERSON = 'delete from people where id = %s'
 SQL_PERSON_BY_ID = 'SELECT id, name, gender, document, email from people where id = %s'
 SQL_USER_BY_ID = 'SELECT id, nome, senha from user where id = %s'
-SQL_UPDATE_PERSON = 'UPDATE people SET nome=%s, categoria=%s, console=%s where id = %s'
+SQL_UPDATE_PERSON = 'UPDATE people SET name=%s, gender=%s, document=%s, email=%s where id = %s'
 SQL_SEARCH_PERSON = 'SELECT id, name, gender, document, email from people'
 SQL_CREATE_PERSON = 'INSERT into people (name, gender, document, email) values (%s, %s, %s, %s)'
 
